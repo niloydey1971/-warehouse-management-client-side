@@ -49,7 +49,7 @@ const Signup = () => {
         createUserWithEmailAndPassword(email, pass).then(() => {
             sendEmailVerification()
             handleUpdateProfile();
-            toast('Verification mail Sent. Check Your Email');
+            alert('Verification mail Sent. Check Your Email');
 
         })
         e.target.reset()
