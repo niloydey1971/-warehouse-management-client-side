@@ -120,7 +120,7 @@ const UpdateProductCard = ({ item }) => {
                             <ListGroup.Item as="li" className='text-start'>
                                 Price : ${i.price}
                             </ListGroup.Item>
-                            <ListGroup.Item as="li" className='text-start'>Description:{i.description}</ListGroup.Item>
+                            <ListGroup.Item as="li" className='text-start'>{i.description}</ListGroup.Item>
                             <ListGroup.Item as="li" className='text-start'>Supplier: {i.supplierName}</ListGroup.Item>
                             <ListGroup.Item as="li" className='text-start'>
                                 Quantity: {i.quantity}

@@ -16,6 +16,7 @@ import AllProductsList from './components/warehouse/AllProductsList';
 import RequireAuth from './components/RequireAuth';
 import AddProducts from './components/warehouse/AddProducts';
 import UpdateProduct from './components/warehouse/UpdateProduct';
+import UserAccount from './components/warehouse/UserAccount';
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
         {/* require Auth Route */}
         <Route path='/inventories' element={<RequireAuth>
           <AllProductsList></AllProductsList>
+        </RequireAuth>}></Route>
+        <Route path='/myproduct' element={<RequireAuth>
+          <UserAccount></UserAccount>
         </RequireAuth>}></Route>
         <Route path='/inventories/:id' element={<RequireAuth>
           <UpdateProduct></UpdateProduct>
