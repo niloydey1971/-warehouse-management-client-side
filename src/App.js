@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CarsMenu from './components/CarsMenu';
 import './css/style.css'
+import Home from './components/Home';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     
     <div>
       <CarsMenu></CarsMenu>
+      <Home></Home>
     </div>
   );
 }

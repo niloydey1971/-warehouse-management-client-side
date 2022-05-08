@@ -23,11 +23,11 @@ const CarsMenu = () => {
                         
                        
                     </Nav>
-                    <Nav>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                    <Nav >
+                    <Nav.Link className='text-light' href="#features" >Features</Nav.Link>
+                        <Nav.Link className='text-light' href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link className='text-light' href="#deets">More deets</Nav.Link>
+                        <Nav.Link className='text-light' href="#memes">
                             Dank memes
                         </Nav.Link>
                     </Nav>
