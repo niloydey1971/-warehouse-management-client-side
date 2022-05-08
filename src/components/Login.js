@@ -85,7 +85,7 @@ const Login = () => {
 
 
                             </div>
-                            <p className='mt-2 text-danger fw-6'>{error?.message}</p>
+                            <p className='mt-2 text-danger '>{error?.message}</p>
 
                         </form>
                         <AutoSignIn></AutoSignIn>
