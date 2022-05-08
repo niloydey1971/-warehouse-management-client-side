@@ -2,7 +2,7 @@ import logo from './logo.svg';
 
 
 import { Routes, Route } from "react-router-dom";
-
+import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CarsMenu from './components/CarsMenu';
 import './css/style.css'
