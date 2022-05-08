@@ -9,6 +9,7 @@ import './css/style.css'
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Home></Home>
       <Login></Login>
       <Signup></Signup>
+      <Footer></Footer>
     </div>
   );
 }
