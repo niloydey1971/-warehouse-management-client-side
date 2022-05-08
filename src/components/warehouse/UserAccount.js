@@ -16,7 +16,7 @@ const UserAccount = () => {
         const getMyItems = async () => {
             const email = user.email
 
-            const url = `http://localhost:4000/myproduct?email=${email}`;
+            const url = `https://floating-inlet-40982.herokuapp.com/myitem?email=${email}`;
             const { data } = await axios.get(url)
 
             setProduct(data)
@@ -65,7 +65,7 @@ const UserAccount = () => {
 
 
                             {
-                                product.map(item => <AllProductsListTable key={item._id} singleItem={item}></AllProductsListTable>
+                                product.map(item => <AllProductsListTable key={item._id} product={item}></AllProductsListTable>
                                 )
                             }
 

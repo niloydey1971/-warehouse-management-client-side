@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Car Moto WareHouse
+# https://carsmoto-eefc3.web.app
+## Description: This project is built by using  React, ExpressJs, Bootstrap and Firebase.
+
+# Features:
+* We use here Protected Route System for security purpose.
+* Admin can add, delete and manage stocks.
+* Anyone can see the homepage, about and blog page.
+* Admin can increase and decrease the quantity of products.
+* Using Firebase we secured the system.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

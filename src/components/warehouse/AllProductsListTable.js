@@ -11,7 +11,7 @@ const AllProductsListTable = (props) => {
      const handleDeleteItem = (id) => {
         const proceed = window.confirm("Make Sure to Delete this Item ?")
         if (proceed) {
-            const url = `http://localhost:4000/products/${id}`
+            const url = `https://floating-inlet-40982.herokuapp.com/products/${id}`
             fetch(url, {
                 method: 'delete'
             }).then(res => res.json())

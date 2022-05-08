@@ -1,10 +1,13 @@
 import React from 'react';
 import { Button, Container, Table } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import useInventory from '../../hooks/useInventory';
 import AllProductsListTable from './AllProductsListTable';
+import auth from '../../firebase.init';
 
 const AllProductsList = () => {
+    const [user] = useAuthState(auth)
     const [items,] = useInventory()
     const navigate = useNavigate()
     return (

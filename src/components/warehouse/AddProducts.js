@@ -7,9 +7,8 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 
 const AddProducts = () => {
-    // const [user] = useAuthState(auth)
-    // console.log("ANIK", user.email)
-    // const email = user.email
+    const [user] = useAuthState(auth)
+    const email = user.email
     const sold = 0
 
     const [name, setName] = useState('')
@@ -22,8 +21,8 @@ const AddProducts = () => {
     // handle  add items btn......
     const handleAddItems = (e) => {
         e.preventDefault()
-        const data = { name, price, quantity, description, image, supplierName, sold }
-        axios.post('http://localhost:4000/products/', data).then(res => toast("Product Added Successfully!"))
+        const data = { name, price, quantity, description, image, supplierName, sold, email }
+        axios.post('https://floating-inlet-40982.herokuapp.com/products/', data).then(res => toast("Product Added Successfully!"))
 
         e.target.reset()
 

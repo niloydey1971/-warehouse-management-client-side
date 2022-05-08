@@ -21,7 +21,7 @@ const UpdateProductCard = ({ item }) => {
 
         const data = { quantity, delivered }
 
-        fetch(`http://localhost:4000/products/${_id}`, {
+        fetch(`https://floating-inlet-40982.herokuapp.com/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const UpdateProductCard = ({ item }) => {
                 toast("Product Delivered Successfully!")
 
                 if (data.modifiedCount > 0) {
-                    fetch(`http://localhost:4000/products/${_id}`)
+                    fetch(`https://floating-inlet-40982.herokuapp.com/products/${_id}`)
                         .then(res => res.json())
                         .then(data => setModifiedData(data))
 
@@ -60,7 +60,7 @@ const UpdateProductCard = ({ item }) => {
 
 
 
-        fetch(`http://localhost:4000/products/${_id}`, {
+        fetch(`https://floating-inlet-40982.herokuapp.com/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const UpdateProductCard = ({ item }) => {
                 toast("Product Added Successfully!")
                 e.target.reset()
                 if (data.modifiedCount > 0) {
-                    fetch(`http://localhost:4000/products/${_id}`)
+                    fetch(`https://floating-inlet-40982.herokuapp.com/products/${_id}`)
                         .then(res => res.json())
                         .then(data => {
                             setModifiedData(data)

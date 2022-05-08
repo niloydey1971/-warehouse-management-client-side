@@ -7,7 +7,7 @@ const UpdateProduct = () => {
     const { id } = useParams()
     const [items, setItems] = useState([])
     useEffect(() => {
-        const url = `http://localhost:4000/products/${id}`
+        const url = `https://floating-inlet-40982.herokuapp.com/products/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))

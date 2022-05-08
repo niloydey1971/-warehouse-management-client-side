@@ -6,7 +6,7 @@ const HomeSectionCard = (props) => {
     const navigate = useNavigate()
     const { _id, name, image, description, price, quantity, supplierName } = props.product
     return (
-        <Col sm>
+        <Col md={4}>
             <Card style={{ width: '18rem', margin: 'auto', marginBottom: '20px' }}>
                 <div className='w-75 mx-auto mt-3'>
                     <Card.Img variant="top" src={image} alt='product' />
