@@ -16,7 +16,7 @@ const CarsMenu = () => {
     return (
         <Navbar collapseOnSelect expand="lg"variant="dark" style={{backgroundColor:"#1D9AD6"}}>
             <Container>
-                <Navbar.Brand href="#home">Car Moto</Navbar.Brand>
+                <Navbar.Brand>Car Moto</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
@@ -24,12 +24,13 @@ const CarsMenu = () => {
                        
                     </Nav>
                     <Nav >
-                    <Nav.Link className='text-light' href="#features" >Features</Nav.Link>
-                        <Nav.Link className='text-light' href="#pricing">Pricing</Nav.Link>
-                        <Nav.Link className='text-light' href="#deets">More deets</Nav.Link>
-                        <Nav.Link className='text-light' href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                    <Nav.Link className='text-light'><Link style={{textDecoration:'none', color:'#fff'}} to='/'>Home</Link></Nav.Link>
+                    <Nav.Link className='text-light'><Link style={{textDecoration:'none', color:'#fff'}} to='/blog'>Blog</Link></Nav.Link>
+                    <Nav.Link className='text-light'><Link style={{textDecoration:'none', color:'#fff'}} to='/login'>Sign In</Link></Nav.Link>
+                    <Nav.Link className='text-light'><Link style={{textDecoration:'none', color:'#fff'}} to='/signup'>Register</Link></Nav.Link>
+                       
+                           
+                       
                     </Nav>
                 </Navbar.Collapse>
             </Container>

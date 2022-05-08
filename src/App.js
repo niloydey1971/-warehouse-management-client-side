@@ -12,6 +12,8 @@ import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Blog from './components/Blog';
 import EmptyPage from './components/EmptyPage';
+import AllProductsList from './components/warehouse/AllProductsList';
+import RequireAuth from './components/RequireAuth';
 
 
 function App() {
@@ -19,12 +21,25 @@ function App() {
     
     <div>
       <CarsMenu></CarsMenu>
-      <Home></Home>
-      <Login></Login>
-      <Signup></Signup>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/inventories" element={<AllProductsList />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="*" element={<EmptyPage />} />
+      <Route path="*" element={<EmptyPage />} />
+      {/* require Auth Route */}
+      <Route path='/inventories' element={<RequireAuth>
+          <AllProductsList></AllProductsList>
+        </RequireAuth>}></Route>
+
+
+      </Routes>
       
-      <Blog></Blog>
-      <EmptyPage></EmptyPage>
+     
+      
+     
       <Footer></Footer>
     </div>
   );

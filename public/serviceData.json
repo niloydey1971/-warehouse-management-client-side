@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "name": "On Page SEO",
+        "price": 450,
+        "description":"On-page SEO makes the foundation of higher Google ranks. We apply the same techniques that we’ve used to rank hundreds of websites.",
+        "image": "onseo.jpg"
+
+    },
+
+    {
+        "id": 2,
+        "name": "Technical SEO",
+        "price": 750,
+        "description":"The first major step in establishing a technical SEO strategy is setting up your website correctly so every page functions as it should",
+        "image": "tseo.webp"
+
+    },
+
+    {
+        "id": 3,
+        "name": "Off Page SEO",
+        "price": 1150,
+        "description":"I use natural link-building techniques. Off-page SEO requires huge resources and networks that can boost your rankings within short time.",
+        "image": "oseo.jpg"
+
+    },
+
+    {
+        "id": 4,
+        "name": "On Page SEO",
+        "price": 450,
+        "description":"On-page SEO makes the foundation of higher Google ranks. We apply the same techniques that we’ve used to rank hundreds of websites.",
+        "image": "onseo.jpg"
+
+    },
+
+    {
+        "id": 5,
+        "name": "Technical SEO",
+        "price": 750,
+        "description":"The first major step in establishing a technical SEO strategy is setting up your website correctly so every page functions as it should",
+        "image": "tseo.webp"
+
+    },
+
+    {
+        "id": 6,
+        "name": "Off Page SEO",
+        "price": 1150,
+        "description":"I use natural link-building techniques. Off-page SEO requires huge resources and networks that can boost your rankings within short time.",
+        "image": "oseo.jpg"
+
+    }
+]
