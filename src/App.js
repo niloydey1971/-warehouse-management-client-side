@@ -10,6 +10,8 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Footer from './components/Footer';
+import Blog from './components/Blog';
+import EmptyPage from './components/EmptyPage';
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
       <Home></Home>
       <Login></Login>
       <Signup></Signup>
+      
+      <Blog></Blog>
+      <EmptyPage></EmptyPage>
       <Footer></Footer>
     </div>
   );
