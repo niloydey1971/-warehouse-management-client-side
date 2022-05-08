@@ -14,6 +14,7 @@ import Blog from './components/Blog';
 import EmptyPage from './components/EmptyPage';
 import AllProductsList from './components/warehouse/AllProductsList';
 import RequireAuth from './components/RequireAuth';
+import AddProducts from './components/warehouse/AddProducts';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
       <Route path='/inventories' element={<RequireAuth>
           <AllProductsList></AllProductsList>
         </RequireAuth>}></Route>
+      <Route path='/myproduct' element={
+          <AddProducts></AddProducts>
+        }></Route>
 
 
       </Routes>
