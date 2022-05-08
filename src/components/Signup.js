@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, Col, Container, Form, FormControl, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import carsignup from '../images/carsignin.jpg'
+import AutoSignIn from './AutoSignIn';
 
 const Signup = () => {
     const [name, setName] = useState('')
@@ -45,11 +46,12 @@ const Signup = () => {
 
                         </form>
 
-
+                        <AutoSignIn></AutoSignIn>
                         <p className='mt-2 mx-auto fs-6'>Already registered ? Go to  <Link className='text-success text-decoration-none' to='/login'>Login Page.</Link></p>
 
 
                     </Card>
+                    
                 </Col>
             </Row>
 

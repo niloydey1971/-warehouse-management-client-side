@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, Col, Container, Form, FormControl, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import carlogin from '../images/carlogin.jpg'
+import AutoSignIn from './AutoSignIn';
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -40,6 +41,7 @@ const Login = () => {
                             {/* <p className='mt-2 text-danger fw-6'>{error?.message}</p> */}
 
                         </form>
+                        <AutoSignIn></AutoSignIn>
 
                         
                         <p className='mt-2 mx-auto fs-6'>New Here? Go to  <Link className='text-success text-decoration-none' to='/signup'>Sign Up Page.</Link></p>
