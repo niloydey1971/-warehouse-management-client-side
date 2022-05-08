@@ -14,8 +14,8 @@ const AllProductsList = () => {
                 
 
                     <h2 className='text-center my-5 fw-5'>Car Moto's Products</h2>
-                    <div className='mt-3 mx-auto'>
-                    <Button onClick={() => navigate('/additems')} className="btn text-light px-3 border-0" style={{ backgroundColor: "#1D9AD6"}}>Add More Products</Button>
+                    <div className='my-5 mx-auto d-flex justify-content-center'>
+                    <Button onClick={() => navigate('/myproduct')} className="btn text-light px-3 border-0" style={{ backgroundColor: "#1D9AD6"}}>Add More Products</Button>
 
                 </div>
 

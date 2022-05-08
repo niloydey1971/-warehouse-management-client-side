@@ -20,7 +20,7 @@ const HomeSectionCard = (props) => {
                     </Card.Text>
                     <Card.Text>Quantity: {quantity}</Card.Text>
                     <Card.Text>Supplier: {supplierName}</Card.Text>
-                    <Button onClick={() => navigate(`/inventory/${_id}`)} style={{ backgroundColor: '#1D9AD6', border: 'none' }}>Update Stock</Button>
+                    <Button onClick={() => navigate(`/inventories/${_id}`)} style={{ backgroundColor: '#1D9AD6', border: 'none' }}>Update Stock</Button>
                 </Card.Body>
             </Card>
         </Col>
