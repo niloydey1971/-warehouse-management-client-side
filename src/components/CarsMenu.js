@@ -30,7 +30,7 @@ const CarsMenu = () => {
                         {
                             user?.uid ?
                                 <>
-                                    <Nav.Link><Link style={{ textDecoration: 'none', color: '#fff' }}  to='/myproduct'>Add Product </Link></Nav.Link>
+                                    <Nav.Link><Link style={{ textDecoration: 'none', color: '#fff' }}  to='/addproduct'>Add Product </Link></Nav.Link>
                                     <Nav.Link style={{ textDecoration: 'none', color: '#fff' }}  onClick={handleSignOut}>Sign Out</Nav.Link>
                                     <Nav.Link className='text-light text-decoration-underline'>{user.displayName}</Nav.Link>
 
